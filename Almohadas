@@ -1,0 +1,103 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almohadas Comfort | Descanso Perfecto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div class="container header-content">
+            <h1 class="logo">🛏️ Almohadas Comfort</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section id="inicio" class="banner">
+        <div class="container banner-content">
+            <h2>El descanso que mereces</h2>
+            <p>Almohadas ergonómicas de alta calidad para un sueño reparador.</p>
+            <a href="#productos" class="btn">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="container productos">
+        <h2 class="titulo-seccion">Nuestros Productos</h2>
+        <div class="grid-productos">
+
+            <div class="card">
+                <div class="card-img">🛌</div>
+                <h3>Almohada Cervical</h3>
+                <p>Ideal para dolores de cuello. Espuma viscoelástica.</p>
+                <span class="precio">$29.99</span>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">☁️</div>
+                <h3>Almohada de Plumas</h3>
+                <p>Suavidad extrema con plumas naturales seleccionadas.</p>
+                <span class="precio">$39.99</span>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">🌙</div>
+                <h3>Almohada Antiácaros</h3>
+                <p>Hipoalergénica, perfecta para pieles sensibles.</p>
+                <span class="precio">$24.99</span>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+            <div class="card">
+                <div class="card-img">💤</div>
+                <h3>Almohada de Viaje</h3>
+                <p>Compacta y cómoda para tus desplazamientos.</p>
+                <span class="precio">$19.99</span>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="container">
+            <h2 class="titulo-seccion">Sobre Nosotros</h2>
+            <p>En Almohadas Comfort llevamos más de 10 años ayudando a las personas a descansar mejor. Seleccionamos los mejores materiales para ofrecerte productos duraderos, cómodos y saludables.</p>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="container contacto">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <form class="form-contacto">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Almohadas Comfort. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
