@@ -1,103 +1,248 @@
-html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almohadas Comfort | Descanso Perfecto</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Tienda de Cojines</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
-    <header>
-        <div class="container header-content">
-            <h1 class="logo">🛏️ Almohadas Comfort</h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+  <!-- ========== ENCABEZADO / HEADER ========== -->
+  <header class="header">
+    <!-- Logo a la izquierda -->
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo de la empresa">
+    </div>
+
+    <!-- Navegación a la derecha -->
+    <nav class="nav">
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+
+      <!-- Botón de lupa (búsqueda) -->
+      <button class="icon-btn" aria-label="Buscar">
+        🔍
+      </button>
+
+      <!-- Botón carrito -->
+      <button class="icon-btn" aria-label="Carrito">
+        🛒
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== PORTADA ========== -->
+  <section class="portada">
+    <img src="img/portada.jpg" alt="Portada de la tienda">
+  </section>
+
+  <!-- ========== GRID DE PRODUCTOS (4x4 = 16) ========== -->
+  <section class="productos" id="productos">
+    <h2>Nuestros Cojines</h2>
+
+    <div class="grid-productos">
+
+      <!-- Tarjeta 1 -->
+      <div class="tarjeta">
+        <img src="img/cojin1.jpg" alt="Cojín 1">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo" aria-label="Amarillo"></button>
+          <button class="circulo bermellon" aria-label="Bermellón"></button>
+          <button class="circulo olivo" aria-label="Verde olivo"></button>
+          <button class="circulo marino" aria-label="Azul marino"></button>
         </div>
-    </header>
+      </div>
 
-    <!-- BANNER PRINCIPAL -->
-    <section id="inicio" class="banner">
-        <div class="container banner-content">
-            <h2>El descanso que mereces</h2>
-            <p>Almohadas ergonómicas de alta calidad para un sueño reparador.</p>
-            <a href="#productos" class="btn">Ver productos</a>
+      <!-- Tarjeta 2 -->
+      <div class="tarjeta">
+        <img src="img/cojin2.jpg" alt="Cojín 2">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
         </div>
-    </section>
+      </div>
 
-    <!-- PRODUCTOS -->
-    <section id="productos" class="container productos">
-        <h2 class="titulo-seccion">Nuestros Productos</h2>
-        <div class="grid-productos">
-
-            <div class="card">
-                <div class="card-img">🛌</div>
-                <h3>Almohada Cervical</h3>
-                <p>Ideal para dolores de cuello. Espuma viscoelástica.</p>
-                <span class="precio">$29.99</span>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-
-            <div class="card">
-                <div class="card-img">☁️</div>
-                <h3>Almohada de Plumas</h3>
-                <p>Suavidad extrema con plumas naturales seleccionadas.</p>
-                <span class="precio">$39.99</span>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-
-            <div class="card">
-                <div class="card-img">🌙</div>
-                <h3>Almohada Antiácaros</h3>
-                <p>Hipoalergénica, perfecta para pieles sensibles.</p>
-                <span class="precio">$24.99</span>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-
-            <div class="card">
-                <div class="card-img">💤</div>
-                <h3>Almohada de Viaje</h3>
-                <p>Compacta y cómoda para tus desplazamientos.</p>
-                <span class="precio">$19.99</span>
-                <button class="btn-comprar">Comprar</button>
-            </div>
-
+      <!-- Tarjeta 3 -->
+      <div class="tarjeta">
+        <img src="img/cojin3.jpg" alt="Cojín 3">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
         </div>
-    </section>
+      </div>
 
-    <!-- NOSOTROS -->
-    <section id="nosotros" class="nosotros">
-        <div class="container">
-            <h2 class="titulo-seccion">Sobre Nosotros</h2>
-            <p>En Almohadas Comfort llevamos más de 10 años ayudando a las personas a descansar mejor. Seleccionamos los mejores materiales para ofrecerte productos duraderos, cómodos y saludables.</p>
+      <!-- Tarjeta 4 -->
+      <div class="tarjeta">
+        <img src="img/cojin4.jpg" alt="Cojín 4">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
         </div>
-    </section>
+      </div>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="container contacto">
-        <h2 class="titulo-seccion">Contacto</h2>
-        <form class="form-contacto">
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <textarea placeholder="Tu mensaje" rows="4" required></textarea>
-            <button type="submit" class="btn">Enviar mensaje</button>
-        </form>
-    </section>
-
-    <!-- PIE DE PÁGINA -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Almohadas Comfort. Todos los derechos reservados.</p>
+      <!-- Tarjeta 5 -->
+      <div class="tarjeta">
+        <img src="img/cojin5.jpg" alt="Cojín 5">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
         </div>
-    </footer>
+      </div>
+
+      <!-- Tarjeta 6 -->
+      <div class="tarjeta">
+        <img src="img/cojin6.jpg" alt="Cojín 6">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 7 -->
+      <div class="tarjeta">
+        <img src="img/cojin7.jpg" alt="Cojín 7">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 8 -->
+      <div class="tarjeta">
+        <img src="img/cojin8.jpg" alt="Cojín 8">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 9 -->
+      <div class="tarjeta">
+        <img src="img/cojin9.jpg" alt="Cojín 9">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 10 -->
+      <div class="tarjeta">
+        <img src="img/cojin10.jpg" alt="Cojín 10">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 11 -->
+      <div class="tarjeta">
+        <img src="img/cojin11.jpg" alt="Cojín 11">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 12 -->
+      <div class="tarjeta">
+        <img src="img/cojin12.jpg" alt="Cojín 12">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 13 -->
+      <div class="tarjeta">
+        <img src="img/cojin13.jpg" alt="Cojín 13">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 14 -->
+      <div class="tarjeta">
+        <img src="img/cojin14.jpg" alt="Cojín 14">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 15 -->
+      <div class="tarjeta">
+        <img src="img/cojin15.jpg" alt="Cojín 15">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 16 -->
+      <div class="tarjeta">
+        <img src="img/cojin16.jpg" alt="Cojín 16">
+        <p class="precio">$25.00</p>
+        <div class="colores">
+          <button class="circulo amarillo"></button>
+          <button class="circulo bermellon"></button>
+          <button class="circulo olivo"></button>
+          <button class="circulo marino"></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PIE DE PÁGINA ========== -->
+  <footer class="footer">
+    <p>&copy; 2025 Mi Tienda de Cojines. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
